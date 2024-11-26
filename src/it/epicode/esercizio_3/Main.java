@@ -43,7 +43,7 @@ public class Main {
                 } catch (BancaException e) {
                     if (cc.restituisciSaldo() < 0) {
                         LOGGER.error(e.getMessage());
-                        
+
                     } else {
                         System.out.println("Quanto vuoi prelevare?");
                         importo = scanner.nextDouble();
